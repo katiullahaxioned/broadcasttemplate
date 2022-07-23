@@ -146,6 +146,32 @@ span {
   color: var(--clr-para);
 }
 
+.event-one ul a,
+.event-two .event-galley-list a {
+  position: relative;
+  font-size: 46px;
+  color: var(--clr-para);
+}
+
+.event-one ul a::before,
+.event-two .event-galley-list a::before {
+  content: '\f04b';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  transition: 0.3s;
+  text-shadow: 0 0 5px var(--bg-para);
+}
+
+.event-one ul a:hover::before,
+.event-two .event-galley-list a:hover::before {
+  color: var(--clr-pink);
+  text-shadow: none;
+}
+
 /* common styling ends here */
 
 /*=================================
@@ -369,30 +395,76 @@ nav a:hover {
   background-color: var(--bg-para);
 }
 
-.event-one ul a {
-  position: relative;
-  font-size: 46px;
-  color: var(--clr-para);
-}
-
-.event-one ul a::before {
-  content: '\f04b';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'fontAwesome';
-  text-indent: 0;
-  transition: 0.3s;
-  text-shadow: 0 0 5px var(--bg-para);
-}
-
-.event-one ul a:hover::before {
-  color: var(--clr-pink);
-  text-shadow: none;
-}
-
 /* event one section styling ends here */
+
+/* event two section styling starts here */
+
+.event-two {
+  background-color: var(--bg-event2);
+}
+
+.event-two .wrapper {
+  padding: 100px 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.event-two .section-title,
+.event-two .section-para {
+  align-self: flex-start;
+}
+
+.event-two-gallery {
+  display: flex;
+  gap: 46px;
+}
+
+.event-gallery-control {
+  flex-basis: 39.5%;
+}
+
+.event-gallery-control li {
+  margin: 0 7px;
+  width: 100%;
+}
+
+.event-gallery-control li a {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  background-color: var(--bg-para);
+  color: var(--clr-para);
+  font-size: 14px;
+  word-spacing: 1px;
+}
+
+.event-gallery-control li:first-child a {
+  background-color: var(--clr-pink);
+  color: var(--clr-white);
+} 
+
+.event-gallery-control li a:hover {
+  background-color: var(--clr-pink);
+  color: var(--clr-white);
+}
+
+.event-galley-list {
+  background-color: royalblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.event-galley-list li {
+  flex-basis: 30.8%;
+}
+
+/* event two section styling ends here */
 
 
 
