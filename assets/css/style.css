@@ -116,11 +116,12 @@ li {
 }
 
 :root {
-  --bg-event2: #101f28;
   --bg-header: #101d3a;
   --bg-footer: #020b13;
   --bg-para: #34434f;
-  --bg-event1: #27374d;
+  --bg-event1: #122635;
+  --bg-event2: #101f28;
+  --bg-event3: #202727;
   --clr-para: #c1c7cd;
   --clr-pink: #aa14cc;
   --clr-white: #fff;
@@ -147,14 +148,16 @@ span {
 }
 
 .event-one ul a,
-.event-two .event-galley-list a {
+.event-two .event-galley-list a,
+.event-three ul a {
   position: relative;
   font-size: 46px;
   color: var(--clr-para);
 }
 
 .event-one ul a::before,
-.event-two .event-galley-list a::before {
+.event-two .event-galley-list a::before,
+.event-three ul a::before {
   content: '\f04b';
   position: absolute;
   top: 50%;
@@ -167,9 +170,20 @@ span {
 }
 
 .event-one ul a:hover::before,
-.event-two .event-galley-list a:hover::before {
+.event-two .event-galley-list a:hover::before,
+.event-three ul a:hover::before {
   color: var(--clr-pink);
   text-shadow: none;
+}
+
+.event-one .wrapper,
+.event-two .wrapper,
+.event-three .wrapper {
+  padding: 100px 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* common styling ends here */
@@ -370,16 +384,10 @@ nav a:hover {
   background-color: var(--bg-event1);
 }
 
-.event-one .wrapper {
-  padding: 100px 0 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .event-one ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 
@@ -388,7 +396,7 @@ nav a:hover {
 }
 
 .event-one ul p {
-  padding: 34px 30px;
+  padding: 34px 0 34px 30px;
   font-size: 18px;
   border-radius: 0 0 5px 5px;
   color: var(--clr-para);
@@ -401,14 +409,6 @@ nav a:hover {
 
 .event-two {
   background-color: var(--bg-event2);
-}
-
-.event-two .wrapper {
-  padding: 100px 0 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .event-two .section-title,
@@ -452,7 +452,6 @@ nav a:hover {
 }
 
 .event-galley-list {
-  background-color: royalblue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -466,10 +465,36 @@ nav a:hover {
 
 /* event two section styling ends here */
 
+/* event three section styling starts here */
 
+.event-three {
+  background-color: var(--bg-event3);
+}
 
+.event-three ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+.event-three ul li {
+  flex-basis: 33%;
+}
 
+.event-three ul img {
+  border-radius: 5px 5px 0 0;
+}
 
+.event-three ul p {
+  padding: 34px 10px 34px 30px;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+  color: var(--clr-para);
+  background-color: var(--bg-para);
+}
+
+/* event three section styling ends here */
 
 /*=================================
   main styling ends here
