@@ -134,6 +134,18 @@ span {
   text-transform: uppercase;
 }
 
+.section-title {
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--clr-white);
+}
+
+.section-para {
+  margin: 35px 0 64px;
+  font-size: 18px;
+  color: var(--clr-para);
+}
+
 /* common styling ends here */
 
 /*=================================
@@ -154,8 +166,17 @@ header .wrapper {
   background-color: var(--bg-header);
 }
 
-header .wrapper > a {
+header a[title="Broadcast"] {
   z-index: 12;
+  overflow: hidden;
+}
+
+header a[title="Broadcast"] img {
+  transition: all 0.3s;
+}
+
+header a[title="Broadcast"]:hover img {
+  transform: scale(1.1);
 }
 
 .menu-toggle-box {
@@ -316,6 +337,62 @@ nav a:hover {
 }
 
 /* banner section styling ends here */
+
+/* event one section styling starts here */
+
+.event-one {
+  background-color: var(--bg-event1);
+}
+
+.event-one .wrapper {
+  padding: 100px 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.event-one ul {
+  display: flex;
+  gap: 50px;
+}
+
+.event-one ul img {
+  border-radius: 5px 5px 0 0;
+}
+
+.event-one ul p {
+  padding: 34px 30px;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+  color: var(--clr-para);
+  background-color: var(--bg-para);
+}
+
+.event-one ul a {
+  position: relative;
+  font-size: 46px;
+  color: var(--clr-para);
+}
+
+.event-one ul a::before {
+  content: '\f04b';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  transition: 0.3s;
+  text-shadow: 0 0 5px var(--bg-para);
+}
+
+.event-one ul a:hover::before {
+  color: var(--clr-pink);
+  text-shadow: none;
+}
+
+/* event one section styling ends here */
 
 
 
