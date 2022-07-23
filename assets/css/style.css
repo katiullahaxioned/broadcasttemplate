@@ -224,6 +224,7 @@ header nav ul {
   gap: 30px;
   background-color: var(--bg-header);
 }
+
 nav a {
   padding: 5px;
   font-size: 16px;
@@ -243,7 +244,78 @@ nav a:hover {
   main styling starts here
 =================================*/
 
+/* banner section styling starts here */
 
+.banner  {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner .wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: red;
+}
+
+.banner .wrapper > figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner .wrapper > figure img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .banner-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(17, 30, 56, 0.5);
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: calc(1.62vw + 32px);
+  font-weight: 800;
+  transform: scaleX(0.86);
+  color: var(--clr-white);
+}
+
+.banner-content p {
+  padding: 0 25%;
+  margin: 25px 0 35px;
+  font-size: 21px;
+  word-spacing: 2px;
+  line-height: 1.8;
+  color: var(--clr-para);
+}
+
+.banner-content a {
+  padding: 16px 28px;
+  margin-bottom: 17px;
+  border: 2px solid var(--clr-para);
+  border-radius: 4px;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--clr-white);
+}
+
+.banner-content a:hover {
+  background-color: var(--clr-pink);
+  border-color: var(--clr-pink);
+}
+
+/* banner section styling ends here */
 
 
 
