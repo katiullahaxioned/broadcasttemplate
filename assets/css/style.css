@@ -178,12 +178,36 @@ span {
 
 .event-one .wrapper,
 .event-two .wrapper,
-.event-three .wrapper {
+.event-three .wrapper,
+footer .wrapper {
   padding: 100px 0 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.event-one ul,
+.event-three ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.event-one ul img,
+.event-three ul img {
+  border-radius: 5px 5px 0 0;
+}
+
+.event-one ul p,
+.event-three ul p {
+  padding: 34px 10px 34px 30px;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+  color: var(--clr-para);
+  background-color: var(--bg-para);
 }
 
 /* common styling ends here */
@@ -385,22 +409,7 @@ nav a:hover {
 }
 
 .event-one ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 50px;
-}
-
-.event-one ul img {
-  border-radius: 5px 5px 0 0;
-}
-
-.event-one ul p {
-  padding: 34px 0 34px 30px;
-  font-size: 18px;
-  border-radius: 0 0 5px 5px;
-  color: var(--clr-para);
-  background-color: var(--bg-para);
 }
 
 /* event one section styling ends here */
@@ -472,26 +481,10 @@ nav a:hover {
 }
 
 .event-three ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 45px;
 }
 .event-three ul li {
   flex-basis: 33%;
-}
-
-.event-three ul img {
-  border-radius: 5px 5px 0 0;
-}
-
-.event-three ul p {
-  padding: 34px 10px 34px 30px;
-  font-size: 18px;
-  border-radius: 0 0 5px 5px;
-  color: var(--clr-para);
-  background-color: var(--bg-para);
 }
 
 /* event three section styling ends here */
@@ -504,7 +497,13 @@ nav a:hover {
   footer styling starts here
 =================================*/ 
 
+footer {
+  background-color: var(--bg-footer);
+}
 
+footer .wrapper {
+  padding: 100px 0 74px;
+}
 
 
 
